@@ -1,0 +1,27 @@
+{
+  "name": "auth-nodeapi-json",
+  "version": "1.0.0",
+  "description": "Authenticate a Node.js API with JSON Web Tokens From tutorial : https://scotch.io/tutorials/authenticate-a-node-js-api-with-json-web-tokens",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indranugraha/auth-nodeapi-json.git"
+  },
+  "author": "Indra Nugraha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/indranugraha/auth-nodeapi-json/issues"
+  },
+  "homepage": "https://github.com/indranugraha/auth-nodeapi-json#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "jsonwebtoken": "^5.4.1",
+    "mongoose": "^4.2.9",
+    "morgan": "^1.6.1"
+  }
+}
