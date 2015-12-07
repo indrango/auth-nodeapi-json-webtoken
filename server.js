@@ -34,7 +34,7 @@ app.get('/', function(req, res) {
 app.get('/setup', function(req, res) {
   //Create a sample user
   var indra = new User({
-    name: 'Indra Nugraha',
+    name: 'Arya Nuridin',
     password: 'password',
     admin: true
   });
@@ -103,10 +103,11 @@ apiRoutes.use(function(req, res, next) {
         return res.json({success: false, message: 'Failed to authenticate token.'});
       } else {
         //If everything is good, save to reques for use in other routes
-        req.decoed = decoded;
+        req.decoded = decoded;
         next();
       }
     });
+    
   }else {
     //If there is no token
     //Return an error
